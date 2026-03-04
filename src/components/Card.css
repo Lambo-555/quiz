@@ -1,0 +1,98 @@
+.card {
+  width: 300px;
+  height: 450px;
+  background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+  border-radius: 15px;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+  transition: transform 0.3s ease;
+  cursor: grab;
+  position: relative;
+  overflow: hidden;
+  border: 2px solid #8b5a2b;
+}
+
+.card:active {
+  cursor: grabbing;
+}
+
+.card.light {
+  background: linear-gradient(135deg, #fefefe 0%, #e6f0ff 100%);
+  border-color: #2e7d32;
+}
+
+.card.dark {
+  background: linear-gradient(135deg, #2c2c2c 0%, #1a1a1a 100%);
+  color: white;
+  border-color: #b71c1c;
+}
+
+.card h3 {
+  font-size: 1.4em;
+  margin: 0 0 15px 0;
+  text-align: center;
+}
+
+.card p {
+  font-size: 1em;
+  line-height: 1.4;
+  flex-grow: 1;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0 10px;
+}
+
+.card-actions {
+  display: flex;
+  justify-content: space-between;
+  gap: 10px;
+  margin-top: 15px;
+}
+
+.swipe-btn {
+  flex: 1;
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 0.9em;
+}
+
+.swipe-btn.left {
+  background-color: #b71c1c;
+  color: white;
+}
+
+.swipe-btn.right {
+  background-color: #2e7d32;
+  color: white;
+}
+
+.swipe-btn:hover {
+  opacity: 0.9;
+}
+
+.card-swiper-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+}
+
+.cards-counter {
+  font-size: 1.2em;
+  font-weight: bold;
+  color: #4a3636;
+}
+
+.no-more-cards {
+  text-align: center;
+  padding: 40px;
+  font-size: 1.2em;
+  color: #6b5a5a;
+}
