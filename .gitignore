@@ -2,41 +2,62 @@
 # Dependencies
 node_modules/
 
-# Build outputs
+# Build artifacts
 dist/
 build/
-coverage/
+*.js.map
 
-# Environment variables
+# Environment
 .env
 .env.local
-.env.*
+*.env.*
 
-# IDE files
+# Editors
 .vscode/
 .idea/
-*.swp
-*.swo
-*.tmp
 
 # Logs
 *.log
 
-# Python cache
+# Python
 __pycache__/
 *.pyc
 *.pyo
+*.pyd
 
-# Coverage reports
+# Temporary files
+*.tmp
+*.swp
+*~
+
+# OS generated files
+.DS_Store
+Thumbs.db
+
+# Coverage
+coverage/
 htmlcov/
 .coverage
 
-# MyPy cache
+# MyPy
 .mypy_cache/
 
-# Pytest cache
+# PyTest
 .pytest_cache/
 
-# Distribution / packaging
-.pytest_cache/
+# Venv
+venv/
+.venv/
+
+# Gradle
+.gradle/
+
+# Target
+target/
+
+# Julia
+julia-*/
+
+# Zig
+zig*/
 ```
